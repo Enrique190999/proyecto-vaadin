@@ -124,6 +124,15 @@
             <version>5.1.1</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.ocpsoft.prettytime</groupId>
+            <artifactId>prettytime</artifactId>
+            <version>4.0.0.Final</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -193,6 +202,7 @@
                     <plugin>
                         <groupId>org.springframework.boot</groupId>
                         <artifactId>spring-boot-maven-plugin</artifactId>
+                        <version>${project.parent.version}</version>
                         <executions>
                             <execution>
                                 <id>start-spring-boot</id>
