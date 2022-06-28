@@ -28,6 +28,8 @@ public class Tweets {
                     this.listadoTweets = new ArrayList<>(Arrays.asList(lista));
                 }else{
                     this.listadoTweets = new ArrayList<Tweet>();
+                    System.out.println("GOLA");
+
                 }
             }else{
                 listadoTweets = new ArrayList<Tweet>();
@@ -55,10 +57,7 @@ public class Tweets {
     public void ModifyTweetByIndex(int index,Tweet tweet){
 
 
-        System.out.println("EL TWEET A ACCEDER" + this.listadoTweets.get(index).toString());
-        System.out.println("EL INDICE " + index + " TWEET DE DESTINO" + tweet);
         this.listadoTweets.set(index, tweet);
-        System.out.println(this.listadoTweets.get(index) + "DESPUES DE MODIFICAR");
         SaveArrayToFile();
 
     }

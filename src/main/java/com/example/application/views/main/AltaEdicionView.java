@@ -76,7 +76,6 @@ public class AltaEdicionView extends VerticalLayout implements HasUrlParameter<I
                 botonModificar.getStyle().set("margin-top","15px");
                 add(textoAutor,textoMensaje,botonModificar);
 
-                add(new H2("Tweet no encontrado"));
             }catch (Exception e){
                 add(new H2("Tweet no encontrado"));
             }
